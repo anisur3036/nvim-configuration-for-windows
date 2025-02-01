@@ -4,7 +4,11 @@ return {
   lazy = false,
   requires = { "nvim-tree/nvim-web-devicons", },
   config = function()
-    require("nvim-tree").setup {}
+    require("nvim-tree").setup {
+      view = {
+        side = "right"
+      }
+    }
   end,
 
   vim.keymap.set("n", "<leader>e", ":NvimTreeFindFileToggle<cr>", { silent = true, noremap = true })
