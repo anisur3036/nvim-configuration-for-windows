@@ -115,6 +115,14 @@ return {
       on_attach = on_attach,
     })
 
+    local pid = vim.fn.getpid()
+
+    lspconfig.omnisharp.setup({
+      cmd = { "omnisharp", "--languageserver", "--hostPID", tostring(pid) },
+      on_attach = on_attach,
+      capabilities = capabilities,
+    })
+
     -- configure lua server (with special settings)
     lspconfig["lua_ls"].setup({
       capabilities = capabilities,

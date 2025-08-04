@@ -32,7 +32,7 @@ return {
         "emmet_language_server",
         "phpactor",
         "volar",
-        "intelephense",
+        "intelephense"
       },
       -- auto-install configured servers (with lspconfig)
       automatic_installation = true, -- not the same as ensure_installed
