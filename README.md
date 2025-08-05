@@ -15,5 +15,6 @@ After installation completed then edit environment variable and add below locati
 First Install dotnet sdk for C# language.
 
 #### Clone this repo
+
 After complating everything installation then clone below repo to your ~/AppData/Local/nvim directory
 `git clone https://github.com/anisur3036/nvim-configuration-for-windows.git .`
