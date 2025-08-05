@@ -121,6 +121,9 @@ return {
       cmd = { "omnisharp", "--languageserver", "--hostPID", tostring(pid) },
       on_attach = on_attach,
       capabilities = capabilities,
+      -- handlers = {
+      --   ["textDocument/definition"] = require('omnisharp_extended').handler, -- Optional for better navigation
+      -- },
     })
 
     -- configure lua server (with special settings)
